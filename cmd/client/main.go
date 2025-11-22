@@ -2,6 +2,7 @@ package main
 
 import (
 	"os"
+	"time"
 	"vystream/protocol"
 )
 
@@ -21,4 +22,6 @@ func main() {
 	}
 
 	_ = protocol.WriteFrame(os.Stdout, f)
+
+	time.Sleep(2 * time.Second)
 }
