@@ -1,3 +1,3 @@
-module vystream
+module ion
 
 go 1.25.4

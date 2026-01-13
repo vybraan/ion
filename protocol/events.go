@@ -36,6 +36,11 @@ type StopEvent struct {
 	Type EventType `json:"type"`
 }
 
+type ErrorEvent struct {
+	Type    EventType `json:"type"`
+	Message string    `json:"message"`
+}
+
 func Encode(v any) ([]byte, error) {
 	return json.Marshal(v)
 }
