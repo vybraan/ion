@@ -57,6 +57,7 @@ This repository provides:
 - TCP transport
 - PipeWire/PulseAudio PCM capture
 - Streaming microphone audio
+- Demo server for ASR/TTS flows
 
 ---
 
@@ -80,6 +81,20 @@ go run . --mode=client --transport=stdio
 
 ## Files
 
-- `SPEC.md` — core protocol specification
-- `ION-ASR.md` — ASR profile
-- `ION-TTS.md` — TTS profile
+- `docs/SPEC.md` — core protocol specification
+- `docs/ION-ASR.md` — ASR profile
+- `docs/ION-TTS.md` — TTS profile
+- `docs/ION-SATELLITE.md` — satellite profile
+- `examples/` — client spec and CLI/web usage
+
+---
+
+## Name
+
+ION is not an acronym. It is a primitive technical term that evokes energy, signal, and flow:
+
+- carries raw signal (audio)
+- moves continuously over a wire
+- reacts to control events
+
+Use it plainly: `ION/1`, `ion://`, `ION frame`, `ION audio`.
